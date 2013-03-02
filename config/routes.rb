@@ -1,6 +1,5 @@
 Beckett::Application.routes.draw do
 
-  resources :pages, :only => [:show]
 
 
   devise_for :users
@@ -12,7 +11,8 @@ Beckett::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'welcome#index'
 
-
+  resources :pages, :only => [:show]
+  get '/:id' => 'pages#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

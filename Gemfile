@@ -33,3 +33,5 @@ gem 'rails_admin'
 #Devise = authentication library
 gem "devise"
 
+#Friendly id
+gem "friendly_id", "~> 4.0.9" # Note: You MUST use 4.0.9 or greater for Rails 3.2.10+
