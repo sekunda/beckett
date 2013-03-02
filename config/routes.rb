@@ -1,6 +1,6 @@
 Beckett::Application.routes.draw do
 
-  resources :pages
+  resources :pages, :only => [:show]
 
 
   devise_for :users
